@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pseudo-element</title>
+    <style>
+        /* eitar maddome lekhar pore text bosano jay */
+        h3::after{
+            content: '.pdf';
+            color: red;
+            font-size: 10px;
+            background-color: yellow;
+        }
+        /* eita diye lekhar age text bosano jay */
+        h3::before{
+            content: 'start:';
+            color: red;
+            font-size: 10px;
+            background-color: yellow;
+        }
+        /* eitar maddome first letter design kora jay. */
+       p::first-letter{
+        font-size: 2em;
+       }
+       /* eitar maddome line color kora jay. */
+       p::first-line{
+        background-color: aquamarine;
+       }
+       /* eitar maddome jokhon text select korbe tokhon tar color change hobe. */
+       ::selection{
+        background-color: yellow;
+       }
+       /* eitar maddome input er vitorer text color kora jay */
+       input::placeholder{
+        color: blue;
+       }
+    </style>
+</head>
+<body>
+    <h3>heading-1</h3>
+    <h3>heading-2</h3>
+    <h3>heading-3</h3>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum repudiandae autem quos maxime suscipit molestiae illo officiis eos veritatis quisquam?</p>
+    <p>Soluta numquam esse, labore quos nesciunt aliquam reprehenderit ducimus. In enim, illum fugiat natus quasi dolor itaque repellat reiciendis neque.</p>
+    <p>Explicabo harum iste similique hic necessitatibus laborum, totam temporibus nihil adipisci, est nisi quos soluta illum distinctio quidem pariatur enim?</p>
+    <input type="text" placeholder="type">
+</body>
+</html>
